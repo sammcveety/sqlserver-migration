@@ -1,0 +1,135 @@
+{
+  "captured": "2026-04-06T23:48:56.090Z",
+  "routes": [
+    {
+      "label": "frontpage",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "login",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "signup",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "home",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "medicine",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "employ",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "dealer",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "purchase",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "about",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "medicine-show-all",
+      "gridviews": 1,
+      "rows": 3
+    },
+    {
+      "label": "medicine-out-of-stock",
+      "gridviews": 1,
+      "rows": 0
+    },
+    {
+      "label": "medicine-all-expired",
+      "gridviews": 1,
+      "rows": 3
+    },
+    {
+      "label": "medicine-find-price",
+      "gridviews": 1,
+      "rows": 1
+    },
+    {
+      "label": "medicine-find-expiry",
+      "gridviews": 1,
+      "rows": 1
+    },
+    {
+      "label": "medicine-who-took",
+      "gridviews": 1,
+      "rows": 0
+    },
+    {
+      "label": "medicine-all-info",
+      "gridviews": 1,
+      "rows": 1
+    },
+    {
+      "label": "medicine-quantity-left",
+      "gridviews": 1,
+      "rows": 3
+    },
+    {
+      "label": "employ-show-all",
+      "gridviews": 1,
+      "rows": 2
+    },
+    {
+      "label": "employ-find-by-id",
+      "gridviews": 1,
+      "rows": 1
+    },
+    {
+      "label": "employ-find-by-name",
+      "gridviews": 1,
+      "rows": 1
+    },
+    {
+      "label": "dealer-show-all",
+      "gridviews": 1,
+      "rows": 2
+    },
+    {
+      "label": "dealer-show-companies",
+      "gridviews": 1,
+      "rows": 3
+    },
+    {
+      "label": "dealer-show-purchases",
+      "gridviews": 1,
+      "rows": 3
+    },
+    {
+      "label": "dealer-show-sales",
+      "gridviews": 1,
+      "rows": 2
+    },
+    {
+      "label": "dealer-find-by-id",
+      "gridviews": 1,
+      "rows": 1
+    },
+    {
+      "label": "dealer-by-company",
+      "gridviews": 1,
+      "rows": 1
+    }
+  ]
+}

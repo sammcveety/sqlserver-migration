@@ -1,0 +1,51 @@
+{
+  "tables": [],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Employ.aspx",
+      "method": "post",
+      "fields": [
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button1",
+          "id": "ctl00_ContentPlaceHolder1_Button1",
+          "value": "Show All Employes"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox1",
+          "id": "ctl00_ContentPlaceHolder1_Textbox1",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button2",
+          "id": "ctl00_ContentPlaceHolder1_Button2",
+          "value": "Submit"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox2",
+          "id": "ctl00_ContentPlaceHolder1_Textbox2",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button3",
+          "id": "ctl00_ContentPlaceHolder1_Button3",
+          "value": "Submit"
+        }
+      ]
+    }
+  ],
+  "gridviews": [],
+  "labels": [],
+  "url": "http://localhost:8080/Employ.aspx",
+  "timestamp": "2026-04-06T23:48:20.615Z"
+}

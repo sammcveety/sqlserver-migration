@@ -1,0 +1,64 @@
+{
+  "tables": [
+    {
+      "index": 0,
+      "headers": [
+        "MedicineName",
+        "CompanyName",
+        "ContactNumber",
+        "Price",
+        "Manufacturing",
+        "Expiry"
+      ],
+      "rows": [
+        [
+          "Paracetamol",
+          "ABC",
+          "12345",
+          "20",
+          "01/10/2018 00:00:00",
+          "04/08/2025 00:00:00"
+        ]
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Outputpage.aspx",
+      "method": "post",
+      "fields": []
+    }
+  ],
+  "gridviews": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_GridView1",
+      "headers": [
+        "MedicineName",
+        "CompanyName",
+        "ContactNumber",
+        "Price",
+        "Manufacturing",
+        "Expiry"
+      ],
+      "rows": [
+        [
+          "Paracetamol",
+          "ABC",
+          "12345",
+          "20",
+          "01/10/2018 00:00:00",
+          "04/08/2025 00:00:00"
+        ]
+      ]
+    }
+  ],
+  "labels": [],
+  "url": "http://localhost:8080/Outputpage.aspx",
+  "timestamp": "2026-04-06T23:48:37.555Z"
+}

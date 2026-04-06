@@ -1,0 +1,86 @@
+{
+  "tables": [
+    {
+      "index": 0,
+      "headers": [
+        "DealerID",
+        "Name",
+        "Contact",
+        "House",
+        "CompanyID",
+        "Email",
+        "Price"
+      ],
+      "rows": [
+        [
+          "10D",
+          "Ali",
+          "0300126454",
+          "DEF",
+          "11C",
+          "Ali@gmail.com",
+          "60"
+        ],
+        [
+          "11D",
+          "Hamza",
+          "0300126453",
+          "ABC",
+          "10C",
+          "Hamza@gmail.com",
+          "50"
+        ]
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Outputpage2.aspx",
+      "method": "post",
+      "fields": []
+    }
+  ],
+  "gridviews": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_GridView1",
+      "headers": [
+        "DealerID",
+        "Name",
+        "Contact",
+        "House",
+        "CompanyID",
+        "Email",
+        "Price"
+      ],
+      "rows": [
+        [
+          "10D",
+          "Ali",
+          "0300126454",
+          "DEF",
+          "11C",
+          "Ali@gmail.com",
+          "60"
+        ],
+        [
+          "11D",
+          "Hamza",
+          "0300126453",
+          "ABC",
+          "10C",
+          "Hamza@gmail.com",
+          "50"
+        ]
+      ]
+    }
+  ],
+  "labels": [],
+  "url": "http://localhost:8080/Outputpage2.aspx",
+  "timestamp": "2026-04-06T23:48:46.804Z"
+}

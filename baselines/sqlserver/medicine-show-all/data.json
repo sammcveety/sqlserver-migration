@@ -1,0 +1,96 @@
+{
+  "tables": [
+    {
+      "index": 0,
+      "headers": [
+        "MedicineID",
+        "MedicineName",
+        "CompanyID",
+        "Price",
+        "Manufacturing",
+        "Expiry"
+      ],
+      "rows": [
+        [
+          "11M",
+          "Ibuprofen",
+          "11C",
+          "30",
+          "01/10/2018 00:00:00",
+          "04/18/2025 00:00:00"
+        ],
+        [
+          "12M",
+          "Paracetamol",
+          "10C",
+          "20",
+          "01/10/2018 00:00:00",
+          "04/08/2025 00:00:00"
+        ],
+        [
+          "13M",
+          "Amoxicillin",
+          "12C",
+          "45",
+          "03/15/2019 00:00:00",
+          "03/15/2026 00:00:00"
+        ]
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Outputpage.aspx",
+      "method": "post",
+      "fields": []
+    }
+  ],
+  "gridviews": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_GridView1",
+      "headers": [
+        "MedicineID",
+        "MedicineName",
+        "CompanyID",
+        "Price",
+        "Manufacturing",
+        "Expiry"
+      ],
+      "rows": [
+        [
+          "11M",
+          "Ibuprofen",
+          "11C",
+          "30",
+          "01/10/2018 00:00:00",
+          "04/18/2025 00:00:00"
+        ],
+        [
+          "12M",
+          "Paracetamol",
+          "10C",
+          "20",
+          "01/10/2018 00:00:00",
+          "04/08/2025 00:00:00"
+        ],
+        [
+          "13M",
+          "Amoxicillin",
+          "12C",
+          "45",
+          "03/15/2019 00:00:00",
+          "03/15/2026 00:00:00"
+        ]
+      ]
+    }
+  ],
+  "labels": [],
+  "url": "http://localhost:8080/Outputpage.aspx",
+  "timestamp": "2026-04-06T23:48:26.393Z"
+}

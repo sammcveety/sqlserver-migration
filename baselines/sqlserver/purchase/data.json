@@ -1,0 +1,75 @@
+{
+  "tables": [],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Purchase.aspx",
+      "method": "post",
+      "fields": [
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox1",
+          "id": "ctl00_ContentPlaceHolder1_TextBox1",
+          "value": ""
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox2",
+          "id": "ctl00_ContentPlaceHolder1_TextBox2",
+          "value": ""
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox3",
+          "id": "ctl00_ContentPlaceHolder1_TextBox3",
+          "value": ""
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox4",
+          "id": "ctl00_ContentPlaceHolder1_TextBox4",
+          "value": ""
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox5",
+          "id": "ctl00_ContentPlaceHolder1_TextBox5",
+          "value": ""
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox6",
+          "id": "ctl00_ContentPlaceHolder1_TextBox6",
+          "value": ""
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox7",
+          "id": "ctl00_ContentPlaceHolder1_TextBox7",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button1",
+          "id": "ctl00_ContentPlaceHolder1_Button1",
+          "value": "Next"
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button2",
+          "id": "ctl00_ContentPlaceHolder1_Button2",
+          "value": "Create Bill"
+        }
+      ]
+    }
+  ],
+  "gridviews": [],
+  "labels": [],
+  "url": "http://localhost:8080/Purchase.aspx",
+  "timestamp": "2026-04-06T23:48:23.074Z"
+}
