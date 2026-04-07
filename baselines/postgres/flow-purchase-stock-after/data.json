@@ -1,0 +1,64 @@
+{
+  "tables": [
+    {
+      "index": 0,
+      "headers": [
+        "MedicineName",
+        "Quantityleft"
+      ],
+      "rows": [
+        [
+          "Ibuprofen",
+          "195"
+        ],
+        [
+          "Paracetamol",
+          "195"
+        ],
+        [
+          "Amoxicillin",
+          "195"
+        ]
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Outputpage.aspx",
+      "method": "post",
+      "fields": []
+    }
+  ],
+  "gridviews": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_GridView1",
+      "headers": [
+        "MedicineName",
+        "Quantityleft"
+      ],
+      "rows": [
+        [
+          "Ibuprofen",
+          "195"
+        ],
+        [
+          "Paracetamol",
+          "195"
+        ],
+        [
+          "Amoxicillin",
+          "195"
+        ]
+      ]
+    }
+  ],
+  "labels": [],
+  "url": "http://localhost:8080/Outputpage.aspx",
+  "timestamp": "2026-04-07T21:59:26.462Z"
+}

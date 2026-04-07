@@ -146,6 +146,195 @@ const POSTBACK_FLOWS = [
     fillFirst: { "ctl00_ContentPlaceHolder1_Textbox2": "10C" },
     description: "Dealer by Company ID (DealernamefromCompID proc)",
   },
+  // Medicine page - remaining read flows
+  {
+    label: "medicine-purchase-dates",
+    sourcePage: "/Medicine.aspx",
+    buttonId: "ctl00_ContentPlaceHolder1_Button9",
+    fillFirst: { "ctl00_ContentPlaceHolder1_Textbox6": "12M" },
+    description: "Purchase Dates (PurchaseDates proc)",
+  },
+  {
+    label: "medicine-no-of-sales",
+    sourcePage: "/Medicine.aspx",
+    buttonId: "ctl00_ContentPlaceHolder1_Button10",
+    fillFirst: { "ctl00_ContentPlaceHolder1_Textbox7": "12M" },
+    description: "Number of Sales (noOfSale proc)",
+  },
+];
+
+// ---------------------------------------------------------------------------
+// Write-then-verify flows
+// ---------------------------------------------------------------------------
+
+const WRITE_FLOWS = [
+  {
+    label: "flow-login",
+    description: "Login with existing credentials (LoginDatabase proc with OUTPUT param)",
+    steps: [
+      { action: "navigate", url: "/Login.aspx" },
+      {
+        action: "fill",
+        fields: {
+          "ctl00_ContentPlaceHolder1_TextBox1": "Mian",
+          "ctl00_ContentPlaceHolder1_txtPassword": "Mian1122",
+        },
+      },
+      {
+        action: "click_and_wait",
+        buttonId: "ctl00_ContentPlaceHolder1_button1",
+      },
+      {
+        action: "capture",
+        label: "flow-login-result",
+        verify: { urlContains: "Home.aspx" },
+      },
+    ],
+  },
+  {
+    label: "flow-signup",
+    description: "Register new employee (GetLastID + SignupDatabase procs with OUTPUT params)",
+    steps: [
+      { action: "navigate", url: "/Signup.aspx" },
+      {
+        action: "fill",
+        fields: {
+          "ctl00_ContentPlaceHolder1_TextBox1": "TestUser",
+          "ctl00_ContentPlaceHolder1_TextBox2": "03001234567",
+          "ctl00_ContentPlaceHolder1_TextBox3": "TestHouse",
+          "ctl00_ContentPlaceHolder1_TextBox4": "Pharmacist",
+          "ctl00_ContentPlaceHolder1_TextBox5": "2000",
+          "ctl00_ContentPlaceHolder1_TextBox6": "testuser",
+          "ctl00_ContentPlaceHolder1_TextBox7": "testuser@test.com",
+          "ctl00_ContentPlaceHolder1_TextBox8": "testpass",
+          "ctl00_ContentPlaceHolder1_TextBox9": "testpass",
+        },
+      },
+      {
+        action: "click_and_wait",
+        buttonId: "ctl00_ContentPlaceHolder1_Button2",
+      },
+      {
+        action: "capture",
+        label: "flow-signup-result",
+        verify: { labelContains: "Account made successfully" },
+      },
+      // Verify the new employee appears in employee list
+      { action: "navigate", url: "/Employ.aspx" },
+      {
+        action: "click_and_wait",
+        buttonId: "ctl00_ContentPlaceHolder1_Button1",
+      },
+      {
+        action: "capture",
+        label: "flow-signup-verify-employee",
+        verify: { gridviewContains: "TestUser" },
+      },
+    ],
+  },
+  {
+    label: "flow-dealer-purchase",
+    description: "Record dealer purchase (Purchaseoutput proc + forStock trigger)",
+    steps: [
+      // Capture stock BEFORE purchase
+      { action: "navigate", url: "/Medicine.aspx" },
+      {
+        action: "fill",
+        fields: { "ctl00_ContentPlaceHolder1_Textbox5": "13M" },
+      },
+      {
+        action: "click_and_wait",
+        buttonId: "ctl00_ContentPlaceHolder1_Button8",
+      },
+      {
+        action: "capture",
+        label: "flow-purchase-stock-before",
+      },
+      // Make a purchase
+      { action: "navigate", url: "/Purchase.aspx" },
+      {
+        action: "fill",
+        fields: {
+          "ctl00_ContentPlaceHolder1_TextBox1": "20P",
+          "ctl00_ContentPlaceHolder1_TextBox2": "11D",
+          "ctl00_ContentPlaceHolder1_TextBox3": "13M",
+          "ctl00_ContentPlaceHolder1_TextBox4": "2024-06-01",
+          "ctl00_ContentPlaceHolder1_TextBox5": "100",
+          "ctl00_ContentPlaceHolder1_TextBox6": "45",
+          "ctl00_ContentPlaceHolder1_TextBox7": "4500",
+        },
+      },
+      {
+        action: "click_and_wait",
+        buttonId: "ctl00_ContentPlaceHolder1_Button2",
+      },
+      {
+        action: "capture",
+        label: "flow-purchase-dealer-bill",
+      },
+      // Verify stock AFTER purchase (forStock trigger should have incremented)
+      { action: "navigate", url: "/Medicine.aspx" },
+      {
+        action: "fill",
+        fields: { "ctl00_ContentPlaceHolder1_Textbox5": "13M" },
+      },
+      {
+        action: "click_and_wait",
+        buttonId: "ctl00_ContentPlaceHolder1_Button8",
+      },
+      {
+        action: "capture",
+        label: "flow-purchase-stock-after",
+        verify: { gridviewContains: "Amoxicillin" },
+      },
+    ],
+  },
+  {
+    label: "flow-customer-purchase",
+    description: "Customer buys medicine (customer_database + CustomerBill + forSales trigger)",
+    steps: [
+      // Capture sales BEFORE customer purchase
+      { action: "navigate", url: "/Dealer.aspx" },
+      {
+        action: "click_and_wait",
+        buttonId: "ctl00_ContentPlaceHolder1_Button4",
+      },
+      {
+        action: "capture",
+        label: "flow-customer-sales-before",
+      },
+      // Make customer purchase and create bill
+      { action: "navigate", url: "/Home.aspx" },
+      {
+        action: "fill",
+        fields: {
+          "ctl00_ContentPlaceHolder1_TextBox1": "20C",
+          "ctl00_ContentPlaceHolder1_TextBox2": "TestBuyer",
+          "ctl00_ContentPlaceHolder1_TextBox3": "13M",
+          "ctl00_ContentPlaceHolder1_TextBox4": "5",
+          "ctl00_ContentPlaceHolder1_TextBox5": "500",
+        },
+      },
+      {
+        action: "click_and_wait",
+        buttonId: "ctl00_ContentPlaceHolder1_Button2",
+      },
+      {
+        action: "capture",
+        label: "flow-customer-bill-result",
+      },
+      // Verify sales AFTER customer purchase (forSales trigger should have updated)
+      { action: "navigate", url: "/Dealer.aspx" },
+      {
+        action: "click_and_wait",
+        buttonId: "ctl00_ContentPlaceHolder1_Button4",
+      },
+      {
+        action: "capture",
+        label: "flow-customer-sales-after",
+      },
+    ],
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -289,6 +478,66 @@ async function main() {
       summary.push({ label: result.label, gridviews: result.gridviews, rows: result.rows });
     }
 
+    // ---- Write-then-verify flows ----
+    console.log("\n--- Write-then-verify flows ---");
+    for (const flow of WRITE_FLOWS) {
+      console.log(`  [write-flow] ${flow.label}: ${flow.description}`);
+      for (const step of flow.steps) {
+        switch (step.action) {
+          case "navigate":
+            await page.goto(`${BASE_URL}${step.url}`, { waitUntil: "networkidle", timeout: 15000 });
+            break;
+
+          case "fill":
+            for (const [id, value] of Object.entries(step.fields)) {
+              await page.evaluate(
+                ({ sel, val }) => { const el = document.querySelector(sel); if (el) el.value = val; },
+                { sel: `#${id}`, val: value }
+              );
+            }
+            break;
+
+          case "click_and_wait":
+            try {
+              await Promise.all([
+                page.waitForNavigation({ waitUntil: "networkidle", timeout: 15000 }).catch(() => {}),
+                page.click(`#${step.buttonId}`),
+              ]);
+            } catch (e) {
+              console.log(`    click error: ${e.message}`);
+            }
+            break;
+
+          case "capture":
+            const result = await capturePage(page, step.label, outputDir);
+            const r = { label: result.label, gridviews: result.gridviews, rows: result.rows };
+
+            // Verification checks
+            if (step.verify) {
+              if (step.verify.urlContains) {
+                r.verified = page.url().includes(step.verify.urlContains);
+                console.log(`    verify URL contains "${step.verify.urlContains}": ${r.verified ? "PASS" : "FAIL"} (${page.url()})`);
+              }
+              if (step.verify.labelContains) {
+                const labelTexts = (result.data.labels || []).map(l => l.text).join(" ");
+                r.verified = labelTexts.includes(step.verify.labelContains);
+                console.log(`    verify label contains "${step.verify.labelContains}": ${r.verified ? "PASS" : "FAIL"}`);
+              }
+              if (step.verify.gridviewContains) {
+                const found = (result.data.gridviews || []).some(gv =>
+                  gv.rows.some(row => row.some(cell => cell.includes(step.verify.gridviewContains)))
+                );
+                r.verified = found;
+                console.log(`    verify gridview contains "${step.verify.gridviewContains}": ${r.verified ? "PASS" : "FAIL"}`);
+              }
+            }
+
+            summary.push(r);
+            break;
+        }
+      }
+    }
+
     await ctx.close();
   } finally {
     await browser.close();
@@ -302,8 +551,13 @@ async function main() {
 
   const totalPages = summary.length;
   const totalRows = summary.reduce((sum, s) => sum + s.rows, 0);
+  const verified = summary.filter(s => s.verified !== undefined);
+  const verifiedOk = verified.filter(s => s.verified).length;
   console.log(`\n--- Summary ---`);
   console.log(`Captured ${totalPages} pages, ${totalRows} total data rows`);
+  if (verified.length > 0) {
+    console.log(`Write verifications: ${verifiedOk}/${verified.length} passed`);
+  }
 }
 
 main().catch((err) => {

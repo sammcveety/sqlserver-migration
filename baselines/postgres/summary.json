@@ -1,5 +1,5 @@
 {
-  "captured": "2026-04-07T18:35:07.041Z",
+  "captured": "2026-04-07T21:59:32.074Z",
   "routes": [
     {
       "label": "frontpage",
@@ -89,7 +89,7 @@
     {
       "label": "employ-show-all",
       "gridviews": 1,
-      "rows": 2
+      "rows": 3
     },
     {
       "label": "employ-find-by-id",
@@ -119,7 +119,7 @@
     {
       "label": "dealer-show-sales",
       "gridviews": 1,
-      "rows": 2
+      "rows": 3
     },
     {
       "label": "dealer-find-by-id",
@@ -130,6 +130,65 @@
       "label": "dealer-by-company",
       "gridviews": 1,
       "rows": 1
+    },
+    {
+      "label": "medicine-purchase-dates",
+      "gridviews": 1,
+      "rows": 1
+    },
+    {
+      "label": "medicine-no-of-sales",
+      "gridviews": 1,
+      "rows": 1
+    },
+    {
+      "label": "flow-login-result",
+      "gridviews": 0,
+      "rows": 0,
+      "verified": true
+    },
+    {
+      "label": "flow-signup-result",
+      "gridviews": 0,
+      "rows": 0,
+      "verified": false
+    },
+    {
+      "label": "flow-signup-verify-employee",
+      "gridviews": 1,
+      "rows": 3,
+      "verified": true
+    },
+    {
+      "label": "flow-purchase-stock-before",
+      "gridviews": 1,
+      "rows": 3
+    },
+    {
+      "label": "flow-purchase-dealer-bill",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "flow-purchase-stock-after",
+      "gridviews": 1,
+      "rows": 3,
+      "verified": true
+    },
+    {
+      "label": "flow-customer-sales-before",
+      "gridviews": 1,
+      "rows": 3
+    },
+    {
+      "label": "flow-customer-bill-result",
+      "gridviews": 0,
+      "rows": 0
+    },
+    {
+      "label": "flow-customer-sales-after",
+      "gridviews": 1,
+      "rows": 3
     }
   ]
 }

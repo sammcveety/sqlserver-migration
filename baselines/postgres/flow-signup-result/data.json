@@ -1,0 +1,92 @@
+{
+  "tables": [],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Signup.aspx",
+      "method": "post",
+      "fields": [
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button1",
+          "id": "ctl00_ContentPlaceHolder1_Button1",
+          "value": "<< Back"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox1",
+          "id": "ctl00_ContentPlaceHolder1_TextBox1",
+          "value": "TestUser"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox2",
+          "id": "ctl00_ContentPlaceHolder1_TextBox2",
+          "value": "03001234567"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox3",
+          "id": "ctl00_ContentPlaceHolder1_TextBox3",
+          "value": "TestHouse"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox4",
+          "id": "ctl00_ContentPlaceHolder1_TextBox4",
+          "value": "Pharmacist"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox5",
+          "id": "ctl00_ContentPlaceHolder1_TextBox5",
+          "value": "2000"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox6",
+          "id": "ctl00_ContentPlaceHolder1_TextBox6",
+          "value": "testuser"
+        },
+        {
+          "type": "password",
+          "name": "ctl00$ContentPlaceHolder1$TextBox8",
+          "id": "ctl00_ContentPlaceHolder1_TextBox8",
+          "value": ""
+        },
+        {
+          "type": "password",
+          "name": "ctl00$ContentPlaceHolder1$TextBox9",
+          "id": "ctl00_ContentPlaceHolder1_TextBox9",
+          "value": ""
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox7",
+          "id": "ctl00_ContentPlaceHolder1_TextBox7",
+          "value": "testuser@test.com"
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button2",
+          "id": "ctl00_ContentPlaceHolder1_Button2",
+          "value": "Signup"
+        }
+      ]
+    }
+  ],
+  "gridviews": [],
+  "labels": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_Label1",
+      "text": "Username already exists!"
+    }
+  ],
+  "url": "http://localhost:8080/Signup.aspx",
+  "timestamp": "2026-04-07T21:59:19.143Z"
+}

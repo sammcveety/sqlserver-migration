@@ -482,7 +482,10 @@ INSERT INTO Stock VALUES ('13M', 200);
 INSERT INTO Sales VALUES ('12M', '2024-01-15', 50, 20, 1000);
 INSERT INTO Sales VALUES ('11M', '2024-01-20', 30, 30, 900);
 
--- Purchases (forStock trigger will fire and update Stock)
+-- Disable triggers during seed to match SQL Server behavior
+-- (SQL Server triggers were disabled during initial data load)
+ALTER TABLE Purchase DISABLE TRIGGER forStock;
 INSERT INTO Purchase VALUES ('15P', '11D', '12M', '2018-01-17', 1000, 40, 40000);
 INSERT INTO Purchase VALUES ('13P', '11D', '11M', '2018-01-12', 10, 50, 500);
 INSERT INTO Purchase VALUES ('12P', '10D', '11M', '2018-01-12', 10, 50, 500);
+ALTER TABLE Purchase ENABLE TRIGGER forStock;

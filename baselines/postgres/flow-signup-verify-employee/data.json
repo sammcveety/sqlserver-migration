@@ -1,0 +1,104 @@
+{
+  "tables": [
+    {
+      "index": 0,
+      "headers": [
+        "EmpID",
+        "EmpName",
+        "Contact",
+        "House",
+        "Designation",
+        "Salary",
+        "Email"
+      ],
+      "rows": [
+        [
+          "2",
+          "Umair",
+          "03368802220",
+          "FaisalTown",
+          "Manager",
+          "1000",
+          "Umair@gmail.com"
+        ],
+        [
+          "3",
+          "Saqib",
+          "03216773647",
+          "FaisalTown",
+          "Manager",
+          "1000",
+          "Saqib@gmail.com"
+        ],
+        [
+          "4",
+          "TestUser",
+          "03001234567",
+          "TestHouse",
+          "Pharmacist",
+          "2000",
+          "testuser@test.com"
+        ]
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Outputpage3.aspx",
+      "method": "post",
+      "fields": []
+    }
+  ],
+  "gridviews": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_GridView1",
+      "headers": [
+        "EmpID",
+        "EmpName",
+        "Contact",
+        "House",
+        "Designation",
+        "Salary",
+        "Email"
+      ],
+      "rows": [
+        [
+          "2",
+          "Umair",
+          "03368802220",
+          "FaisalTown",
+          "Manager",
+          "1000",
+          "Umair@gmail.com"
+        ],
+        [
+          "3",
+          "Saqib",
+          "03216773647",
+          "FaisalTown",
+          "Manager",
+          "1000",
+          "Saqib@gmail.com"
+        ],
+        [
+          "4",
+          "TestUser",
+          "03001234567",
+          "TestHouse",
+          "Pharmacist",
+          "2000",
+          "testuser@test.com"
+        ]
+      ]
+    }
+  ],
+  "labels": [],
+  "url": "http://localhost:8080/Outputpage3.aspx",
+  "timestamp": "2026-04-07T21:59:21.000Z"
+}

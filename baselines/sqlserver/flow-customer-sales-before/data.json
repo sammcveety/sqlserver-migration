@@ -1,0 +1,74 @@
+{
+  "tables": [
+    {
+      "index": 0,
+      "headers": [
+        "MedicineID",
+        "SalesDate",
+        "Quantity",
+        "price",
+        "Totalprice"
+      ],
+      "rows": [
+        [
+          "12M",
+          "01/15/2024 00:00:00",
+          "50",
+          "20",
+          "1000"
+        ],
+        [
+          "11M",
+          "01/20/2024 00:00:00",
+          "30",
+          "30",
+          "900"
+        ]
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Outputpage2.aspx",
+      "method": "post",
+      "fields": []
+    }
+  ],
+  "gridviews": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_GridView1",
+      "headers": [
+        "MedicineID",
+        "SalesDate",
+        "Quantity",
+        "price",
+        "Totalprice"
+      ],
+      "rows": [
+        [
+          "12M",
+          "01/15/2024 00:00:00",
+          "50",
+          "20",
+          "1000"
+        ],
+        [
+          "11M",
+          "01/20/2024 00:00:00",
+          "30",
+          "30",
+          "900"
+        ]
+      ]
+    }
+  ],
+  "labels": [],
+  "url": "http://localhost:8080/Outputpage2.aspx",
+  "timestamp": "2026-04-07T19:34:46.771Z"
+}

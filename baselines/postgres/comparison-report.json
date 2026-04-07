@@ -86,8 +86,20 @@
   },
   {
     "label": "employ-show-all",
-    "pass": true,
-    "diffs": []
+    "pass": false,
+    "diffs": [
+      {
+        "type": "table_diffs",
+        "details": [
+          {
+            "table": 0,
+            "type": "row_count_changed",
+            "before": 2,
+            "after": 3
+          }
+        ]
+      }
+    ]
   },
   {
     "label": "employ-find-by-id",
@@ -116,8 +128,20 @@
   },
   {
     "label": "dealer-show-sales",
-    "pass": true,
-    "diffs": []
+    "pass": false,
+    "diffs": [
+      {
+        "type": "table_diffs",
+        "details": [
+          {
+            "table": 0,
+            "type": "row_count_changed",
+            "before": 2,
+            "after": 3
+          }
+        ]
+      }
+    ]
   },
   {
     "label": "dealer-find-by-id",
@@ -126,6 +150,202 @@
   },
   {
     "label": "dealer-by-company",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine-purchase-dates",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine-no-of-sales",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "flow-login-result",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "flow-signup-result",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "flow-signup-verify-employee",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "flow-purchase-stock-before",
+    "pass": false,
+    "diffs": [
+      {
+        "type": "table_diffs",
+        "details": [
+          {
+            "table": 0,
+            "type": "row_data_changed",
+            "row": 0,
+            "before": [
+              "Ibuprofen",
+              "200"
+            ],
+            "after": [
+              "Ibuprofen",
+              "195"
+            ]
+          },
+          {
+            "table": 0,
+            "type": "row_data_changed",
+            "row": 1,
+            "before": [
+              "Paracetamol",
+              "200"
+            ],
+            "after": [
+              "Paracetamol",
+              "195"
+            ]
+          },
+          {
+            "table": 0,
+            "type": "row_data_changed",
+            "row": 2,
+            "before": [
+              "Amoxicillin",
+              "200"
+            ],
+            "after": [
+              "Amoxicillin",
+              "195"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "flow-purchase-dealer-bill",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "flow-purchase-stock-after",
+    "pass": false,
+    "diffs": [
+      {
+        "type": "table_diffs",
+        "details": [
+          {
+            "table": 0,
+            "type": "row_data_changed",
+            "row": 0,
+            "before": [
+              "Ibuprofen",
+              "200"
+            ],
+            "after": [
+              "Ibuprofen",
+              "195"
+            ]
+          },
+          {
+            "table": 0,
+            "type": "row_data_changed",
+            "row": 1,
+            "before": [
+              "Paracetamol",
+              "200"
+            ],
+            "after": [
+              "Paracetamol",
+              "195"
+            ]
+          },
+          {
+            "table": 0,
+            "type": "row_data_changed",
+            "row": 2,
+            "before": [
+              "Amoxicillin",
+              "200"
+            ],
+            "after": [
+              "Amoxicillin",
+              "195"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "flow-customer-sales-before",
+    "pass": false,
+    "diffs": [
+      {
+        "type": "table_diffs",
+        "details": [
+          {
+            "table": 0,
+            "type": "row_count_changed",
+            "before": 2,
+            "after": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "flow-customer-bill-result",
+    "pass": false,
+    "diffs": [
+      {
+        "type": "headings_changed",
+        "before": [
+          {
+            "tag": "H1",
+            "text": "System.Web.HttpException"
+          },
+          {
+            "tag": "H2",
+            "text": "The resource cannot be found."
+          }
+        ],
+        "after": [
+          {
+            "tag": "H1",
+            "text": "PHOENIX PHARMACY"
+          }
+        ]
+      },
+      {
+        "type": "forms_changed",
+        "before": [],
+        "after": [
+          {
+            "action": "http://localhost:8080/Home.aspx",
+            "method": "post",
+            "fieldNames": [
+              "ctl00$ContentPlaceHolder1$Button1",
+              "ctl00$ContentPlaceHolder1$Button2",
+              "ctl00$ContentPlaceHolder1$TextBox1",
+              "ctl00$ContentPlaceHolder1$TextBox2",
+              "ctl00$ContentPlaceHolder1$TextBox3",
+              "ctl00$ContentPlaceHolder1$TextBox4",
+              "ctl00$ContentPlaceHolder1$TextBox5"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "flow-customer-sales-after",
     "pass": true,
     "diffs": []
   }
