@@ -12,7 +12,7 @@ namespace MedicalStore
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DAL.myClass userDal = new DAL.myClass();
+            dynamic userDal = DAL.DalFactory.Create();
             DataTable table = new DataTable();
             table = userDal.showdealerbill();
             GridView1.DataSource = table;

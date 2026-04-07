@@ -15,7 +15,7 @@ namespace MedicalStore
         {
             if (Session["Did"].ToString() == "1")
             {
-                DAL.myClass userDal = new DAL.myClass();
+                dynamic userDal = DAL.DalFactory.Create();
                 DataTable table = new DataTable();
                 table = userDal.showalldealers();
                 GridView1.DataSource = table;
@@ -24,7 +24,7 @@ namespace MedicalStore
             }
             else if (Session["Did"].ToString() == "2")
             {
-                DAL.myClass userDal = new DAL.myClass();
+                dynamic userDal = DAL.DalFactory.Create();
                 DataTable table = new DataTable();
                 table = userDal.showallcompanies();
                 GridView1.DataSource = table;
@@ -33,7 +33,7 @@ namespace MedicalStore
             }
             else if (Session["Did"].ToString() == "3")
             {
-                DAL.myClass userDal = new DAL.myClass();
+                dynamic userDal = DAL.DalFactory.Create();
                 DataTable table = new DataTable();
                 table = userDal.showallpurchases();
                 GridView1.DataSource = table;
@@ -42,7 +42,7 @@ namespace MedicalStore
             }
             else if (Session["Did"].ToString() == "4")
             {
-                DAL.myClass userDal = new DAL.myClass();
+                dynamic userDal = DAL.DalFactory.Create();
                 DataTable table = new DataTable();
                 table = userDal.showallsales();
                 GridView1.DataSource = table;
@@ -51,7 +51,7 @@ namespace MedicalStore
             }
             else if (Session["Did"].ToString() == "5")
             {
-                DAL.myClass userDal = new DAL.myClass();
+                dynamic userDal = DAL.DalFactory.Create();
                 DataTable table = new DataTable();
                 table = userDal.searchdealerbyid(Session["Did2"].ToString());
                 GridView1.DataSource = table;
@@ -60,7 +60,7 @@ namespace MedicalStore
             }
             else if (Session["Did"].ToString() == "6")
             {
-                DAL.myClass userDal = new DAL.myClass();
+                dynamic userDal = DAL.DalFactory.Create();
                 DataTable table = new DataTable();
                 table = userDal.DealernamefromCompID(Session["Did2"].ToString());
                 GridView1.DataSource = table;

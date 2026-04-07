@@ -1,0 +1,159 @@
+{
+  "tables": [],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Medicine.aspx",
+      "method": "post",
+      "fields": [
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button1",
+          "id": "ctl00_ContentPlaceHolder1_Button1",
+          "value": "Show All Medicines"
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button2",
+          "id": "ctl00_ContentPlaceHolder1_Button2",
+          "value": "Show Out Of Stock"
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button3",
+          "id": "ctl00_ContentPlaceHolder1_Button3",
+          "value": "Show All Expired"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox1",
+          "id": "ctl00_ContentPlaceHolder1_Textbox1",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button4",
+          "id": "ctl00_ContentPlaceHolder1_Button4",
+          "value": "Submit"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox2",
+          "id": "ctl00_ContentPlaceHolder1_Textbox2",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button5",
+          "id": "ctl00_ContentPlaceHolder1_Button5",
+          "value": "Submit"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox3",
+          "id": "ctl00_ContentPlaceHolder1_Textbox3",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button6",
+          "id": "ctl00_ContentPlaceHolder1_Button6",
+          "value": "Submit"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox4",
+          "id": "ctl00_ContentPlaceHolder1_Textbox4",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button7",
+          "id": "ctl00_ContentPlaceHolder1_Button7",
+          "value": "Submit"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox5",
+          "id": "ctl00_ContentPlaceHolder1_Textbox5",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button8",
+          "id": "ctl00_ContentPlaceHolder1_Button8",
+          "value": "Submit"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox6",
+          "id": "ctl00_ContentPlaceHolder1_Textbox6",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button9",
+          "id": "ctl00_ContentPlaceHolder1_Button9",
+          "value": "Submit"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox7",
+          "id": "ctl00_ContentPlaceHolder1_Textbox7",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button10",
+          "id": "ctl00_ContentPlaceHolder1_Button10",
+          "value": "Submit"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox8",
+          "id": "ctl00_ContentPlaceHolder1_Textbox8",
+          "value": ""
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox9",
+          "id": "ctl00_ContentPlaceHolder1_Textbox9",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button11",
+          "id": "ctl00_ContentPlaceHolder1_Button11",
+          "value": "Submit"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox10",
+          "id": "ctl00_ContentPlaceHolder1_Textbox10",
+          "value": ""
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox11",
+          "id": "ctl00_ContentPlaceHolder1_Textbox11",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button12",
+          "id": "ctl00_ContentPlaceHolder1_Button12",
+          "value": "Submit"
+        }
+      ]
+    }
+  ],
+  "gridviews": [],
+  "labels": [],
+  "url": "http://localhost:8080/Medicine.aspx",
+  "timestamp": "2026-04-07T18:34:30.235Z"
+}

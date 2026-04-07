@@ -15,7 +15,7 @@ namespace MedicalStore
         {
             if (Session["Employ"].ToString() == "1")
             {
-                DAL.myClass userDal = new DAL.myClass();
+                dynamic userDal = DAL.DalFactory.Create();
                 DataTable table = new DataTable();
                 table = userDal.showallEmployees();
                 GridView1.DataSource = table;
@@ -25,7 +25,7 @@ namespace MedicalStore
             }
             else if (Session["Employ"].ToString() == "2")
             {
-                DAL.myClass userDal = new DAL.myClass();
+                dynamic userDal = DAL.DalFactory.Create();
                 DataTable table = new DataTable();
                 table = userDal.findemploy(Session["Eid"].ToString());
                 GridView1.DataSource = table;
@@ -34,7 +34,7 @@ namespace MedicalStore
             }
             else if (Session["Employ"].ToString() == "3")
             {
-                DAL.myClass userDal = new DAL.myClass();
+                dynamic userDal = DAL.DalFactory.Create();
                 DataTable table = new DataTable();
                 table = userDal.findemployname(Session["Eid"].ToString());
                 GridView1.DataSource = table;

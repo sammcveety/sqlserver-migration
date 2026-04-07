@@ -1,0 +1,50 @@
+{
+  "tables": [],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Login.aspx",
+      "method": "post",
+      "fields": [
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button2",
+          "id": "ctl00_ContentPlaceHolder1_Button2",
+          "value": "<< Back"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$TextBox1",
+          "id": "ctl00_ContentPlaceHolder1_TextBox1",
+          "value": ""
+        },
+        {
+          "type": "password",
+          "name": "ctl00$ContentPlaceHolder1$txtPassword",
+          "id": "ctl00_ContentPlaceHolder1_txtPassword",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$button1",
+          "id": "ctl00_ContentPlaceHolder1_button1",
+          "value": "Login"
+        }
+      ]
+    }
+  ],
+  "gridviews": [],
+  "labels": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_Label1",
+      "text": ""
+    }
+  ],
+  "url": "http://localhost:8080/Login.aspx",
+  "timestamp": "2026-04-07T18:34:26.413Z"
+}

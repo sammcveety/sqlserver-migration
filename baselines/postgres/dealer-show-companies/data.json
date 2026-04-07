@@ -1,0 +1,80 @@
+{
+  "tables": [
+    {
+      "index": 0,
+      "headers": [
+        "CompanyID",
+        "CompanyName",
+        "Location",
+        "ContactNumber"
+      ],
+      "rows": [
+        [
+          "10C",
+          "ABC",
+          "Lahore",
+          "12345"
+        ],
+        [
+          "11C",
+          "DEF",
+          "Karachi",
+          "45678"
+        ],
+        [
+          "12C",
+          "GHI",
+          "Karachi",
+          "32242"
+        ]
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Outputpage2.aspx",
+      "method": "post",
+      "fields": []
+    }
+  ],
+  "gridviews": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_GridView1",
+      "headers": [
+        "CompanyID",
+        "CompanyName",
+        "Location",
+        "ContactNumber"
+      ],
+      "rows": [
+        [
+          "10C",
+          "ABC",
+          "Lahore",
+          "12345"
+        ],
+        [
+          "11C",
+          "DEF",
+          "Karachi",
+          "45678"
+        ],
+        [
+          "12C",
+          "GHI",
+          "Karachi",
+          "32242"
+        ]
+      ]
+    }
+  ],
+  "labels": [],
+  "url": "http://localhost:8080/Outputpage2.aspx",
+  "timestamp": "2026-04-07T18:34:59.574Z"
+}

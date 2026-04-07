@@ -18,7 +18,7 @@ namespace MedicalStore
 
         protected void button2_Click(object sender, EventArgs e)
         {
-            DAL.myClass userDal = new DAL.myClass();
+            dynamic userDal = DAL.DalFactory.Create();
             DataTable DT = new DataTable();
             if (TextBox8.Text != TextBox9.Text)
             {

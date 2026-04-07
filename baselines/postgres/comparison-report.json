@@ -1,0 +1,132 @@
+[
+  {
+    "label": "frontpage",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "login",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "signup",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "home",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "employ",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "dealer",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "purchase",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "about",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine-show-all",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine-out-of-stock",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine-all-expired",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine-find-price",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine-find-expiry",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine-who-took",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine-all-info",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "medicine-quantity-left",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "employ-show-all",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "employ-find-by-id",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "employ-find-by-name",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "dealer-show-all",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "dealer-show-companies",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "dealer-show-purchases",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "dealer-show-sales",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "dealer-find-by-id",
+    "pass": true,
+    "diffs": []
+  },
+  {
+    "label": "dealer-by-company",
+    "pass": true,
+    "diffs": []
+  }
+]

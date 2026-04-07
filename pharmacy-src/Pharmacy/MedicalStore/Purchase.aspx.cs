@@ -19,7 +19,7 @@ namespace MedicalStore
         protected void Button1_Click(object sender, EventArgs e)
         {
 
-            DAL.myClass userDal = new DAL.myClass();
+            dynamic userDal = DAL.DalFactory.Create();
             string PurchaseID = TextBox1.Text;
             string DealerID = TextBox2.Text;
             string Medicineid = TextBox3.Text;
@@ -49,7 +49,7 @@ namespace MedicalStore
         }
         protected void Button2_Click(object sender, EventArgs e)
         {
-            DAL.myClass userDal = new DAL.myClass();
+            dynamic userDal = DAL.DalFactory.Create();
             string PurchaseID = TextBox1.Text;
             string DealerID = TextBox2.Text;
             string Medicineid = TextBox3.Text;

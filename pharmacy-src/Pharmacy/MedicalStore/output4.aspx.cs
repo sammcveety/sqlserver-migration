@@ -15,7 +15,7 @@ namespace MedicalStore
         {
 
  
-                DAL.myClass userDal = new DAL.myClass();
+                dynamic userDal = DAL.DalFactory.Create();
                 DataTable table = new DataTable();
                 table = userDal.showbill();
                 GridView1.DataSource = table;

@@ -1,0 +1,69 @@
+{
+  "tables": [],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Dealer.aspx",
+      "method": "post",
+      "fields": [
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button1",
+          "id": "ctl00_ContentPlaceHolder1_Button1",
+          "value": "Show All Dealers"
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button2",
+          "id": "ctl00_ContentPlaceHolder1_Button2",
+          "value": "Show All Companies"
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button3",
+          "id": "ctl00_ContentPlaceHolder1_Button3",
+          "value": "Show All Purchases"
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button4",
+          "id": "ctl00_ContentPlaceHolder1_Button4",
+          "value": "Show All Sales"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox1",
+          "id": "ctl00_ContentPlaceHolder1_Textbox1",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button5",
+          "id": "ctl00_ContentPlaceHolder1_Button5",
+          "value": "Submit"
+        },
+        {
+          "type": "text",
+          "name": "ctl00$ContentPlaceHolder1$Textbox2",
+          "id": "ctl00_ContentPlaceHolder1_Textbox2",
+          "value": ""
+        },
+        {
+          "type": "submit",
+          "name": "ctl00$ContentPlaceHolder1$Button6",
+          "id": "ctl00_ContentPlaceHolder1_Button6",
+          "value": "Submit"
+        }
+      ]
+    }
+  ],
+  "gridviews": [],
+  "labels": [],
+  "url": "http://localhost:8080/Dealer.aspx",
+  "timestamp": "2026-04-07T18:34:32.720Z"
+}

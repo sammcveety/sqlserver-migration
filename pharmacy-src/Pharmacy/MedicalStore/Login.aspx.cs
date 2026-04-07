@@ -18,7 +18,7 @@ namespace MedicalStore
 
         protected void button1_Click1(object sender, EventArgs e)
         {
-            DAL.myClass userDal = new DAL.myClass();
+            dynamic userDal = DAL.DalFactory.Create();
             string Username = TextBox1.Text;
             string Password = txtPassword.Text;
             if (Username == "" || Password == "")

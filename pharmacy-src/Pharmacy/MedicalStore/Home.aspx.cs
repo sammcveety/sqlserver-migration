@@ -17,7 +17,7 @@ namespace MedicalStore
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            DAL.myClass userDal = new DAL.myClass();
+            dynamic userDal = DAL.DalFactory.Create();
             string id = TextBox1.Text;
             string name = TextBox2.Text;
             string mid = TextBox3.Text;
@@ -36,7 +36,7 @@ namespace MedicalStore
         }
         protected void Button2_Click(object sender, EventArgs e)
         {
-            DAL.myClass userDal = new DAL.myClass();
+            dynamic userDal = DAL.DalFactory.Create();
             string id = TextBox1.Text;
             string name = TextBox2.Text;
             string mid = TextBox3.Text;

@@ -1,0 +1,104 @@
+{
+  "tables": [
+    {
+      "index": 0,
+      "headers": [
+        "PurchaseID",
+        "DealerID",
+        "Medicineid",
+        "PurchaseDate",
+        "Quantity",
+        "price",
+        "Totalprice"
+      ],
+      "rows": [
+        [
+          "12P",
+          "10D",
+          "11M",
+          "01/12/2018 00:00:00",
+          "10",
+          "50",
+          "500"
+        ],
+        [
+          "13P",
+          "11D",
+          "11M",
+          "01/12/2018 00:00:00",
+          "10",
+          "50",
+          "500"
+        ],
+        [
+          "15P",
+          "11D",
+          "12M",
+          "01/17/2018 00:00:00",
+          "1000",
+          "40",
+          "40000"
+        ]
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Outputpage2.aspx",
+      "method": "post",
+      "fields": []
+    }
+  ],
+  "gridviews": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_GridView1",
+      "headers": [
+        "PurchaseID",
+        "DealerID",
+        "Medicineid",
+        "PurchaseDate",
+        "Quantity",
+        "price",
+        "Totalprice"
+      ],
+      "rows": [
+        [
+          "12P",
+          "10D",
+          "11M",
+          "01/12/2018 00:00:00",
+          "10",
+          "50",
+          "500"
+        ],
+        [
+          "13P",
+          "11D",
+          "11M",
+          "01/12/2018 00:00:00",
+          "10",
+          "50",
+          "500"
+        ],
+        [
+          "15P",
+          "11D",
+          "12M",
+          "01/17/2018 00:00:00",
+          "1000",
+          "40",
+          "40000"
+        ]
+      ]
+    }
+  ],
+  "labels": [],
+  "url": "http://localhost:8080/Outputpage2.aspx",
+  "timestamp": "2026-04-07T18:35:01.411Z"
+}

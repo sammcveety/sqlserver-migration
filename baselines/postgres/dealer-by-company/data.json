@@ -1,0 +1,48 @@
+{
+  "tables": [
+    {
+      "index": 0,
+      "headers": [
+        "DealerID",
+        "Name"
+      ],
+      "rows": [
+        [
+          "11D",
+          "Hamza"
+        ]
+      ]
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "PHOENIX PHARMACY"
+    }
+  ],
+  "forms": [
+    {
+      "action": "http://localhost:8080/Outputpage2.aspx",
+      "method": "post",
+      "fields": []
+    }
+  ],
+  "gridviews": [
+    {
+      "id": "ctl00_ContentPlaceHolder1_GridView1",
+      "headers": [
+        "DealerID",
+        "Name"
+      ],
+      "rows": [
+        [
+          "11D",
+          "Hamza"
+        ]
+      ]
+    }
+  ],
+  "labels": [],
+  "url": "http://localhost:8080/Outputpage2.aspx",
+  "timestamp": "2026-04-07T18:35:06.965Z"
+}
